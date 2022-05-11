@@ -1,0 +1,10 @@
+# Library and framework files/directories
+node_modules/
+npm-debug.log
+
+# IDE files/directores
+.idea/
+*.iml
+.tern-port
+.tags*
+.vscode/
