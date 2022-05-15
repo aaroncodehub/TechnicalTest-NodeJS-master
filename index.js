@@ -25,7 +25,7 @@ const InvoiceLine = require('./invoiceLine.js');
 function main() {
     console.log("Welcome to Xero Tech Test!");
 
-    createInvoiceWithOneIem();
+    createInvoiceWithOneItem();
     createInvoiceWithMultipleItemsAndQuantities();
     removeItem();
     mergeInvoices();
@@ -79,8 +79,8 @@ function cloneInvoice() {
     invoice.addInvoiceLine(new InvoiceLine(1, 0.99, 5, "Onion"));
     invoice.addInvoiceLine(new InvoiceLine(2, 10.49, 2, "Watermelon"));
 
-    const clonedInvoice = invoice.Clone();
-    console.log(clonedInvoice.GetTotal());
+    const clonedInvoice = invoice.clone(invoice);
+    console.log(clonedInvoice.getTotal());
 }
 
 function invoiceToString() {

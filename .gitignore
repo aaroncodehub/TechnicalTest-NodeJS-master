@@ -8,3 +8,6 @@ npm-debug.log
 .tern-port
 .tags*
 .vscode/
+
+# Test coverage
+coverage/
